@@ -1,0 +1,24 @@
+# Environment
+.env
+.env.local
+
+# Build
+backend/target/
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+backend/boot.log
+backend/error.txt
+
+# OS
+.DS_Store
+Thumbs.db

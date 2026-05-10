@@ -1,0 +1,29 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: knowledgeos-db
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_DB: knowledgeos
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - knowledgeos-net
+
+  adminer:
+    image: adminer
+    container_name: knowledgeos-adminer
+    ports:
+      - "8080:8080"
+    networks:
+      - knowledgeos-net
+
+volumes:
+  postgres_data:
+
+networks:
+  knowledgeos-net:
+    driver: bridge
