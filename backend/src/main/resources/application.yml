@@ -22,7 +22,7 @@ spring:
         api-key: ${GEMINI_API_KEY}
         chat:
           options:
-            model: gemini-1.5-flash
+            model: gemini-2.5-flash
 
 server:
   port: 8081 # Port 8081 to avoid conflicts

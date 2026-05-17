@@ -16,8 +16,13 @@ frontend/out/
 
 # Logs
 *.log
+backend/*.log
 backend/boot.log
 backend/error.txt
+
+# Local Storage binaries
+backend/storage/
+sample.pdf
 
 # OS
 .DS_Store

@@ -38,6 +38,12 @@ public class Content {
     @Column(name = "tag")
     private List<String> tags;
 
+    private String storagePath;
+
+    private String fileName;
+
+    private String fileType;
+
     @Enumerated(EnumType.STRING)
     private Status status;
 
